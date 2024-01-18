@@ -306,6 +306,9 @@ public:
         }
       }
     }
+    //clear points on Hull vector
+    for (unsigned int j = 0; j <= N; j++)
+      PointsOnHull[j].clear();
     iter = changes_t.begin();
     while (iter != changes_t.end()) {
       if (candidates[(*iter)]->isPruning) {
